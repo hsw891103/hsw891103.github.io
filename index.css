@@ -1,0 +1,94 @@
+.btn {
+  cursor: pointer;
+}
+
+body {
+  color: #34495e;
+  transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+.form,
+.greetings,
+.worning {
+  display: none;
+  text-align: center;
+  color: #4682b4;
+  padding-top: 10px;
+}
+.showing {
+  display: block;
+}
+.js-clock {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.toDoForm {
+  text-align: center;
+  padding-bottom: 10px;
+}
+li {
+  display: block;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.toDoList {
+  margin: auto;
+  background: rgba(215, 231, 254, 0.26);
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+  display: block;
+  text-align: right;
+  font-size: 1.5rem;
+  color: rgb(255, 0, 0);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.section {
+  height: 600px;
+  background-color: rgb(253, 221, 221);
+}
+
+.aside {
+  position: absolute;
+  margin: -600px 0 0 960px;
+  width: 180px;
+  height: 600px;
+  background-color: rgb(227, 248, 239);
+}
+
+.check {
+  text-decoration: line-through double;
+}
+.point {
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
