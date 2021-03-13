@@ -11,9 +11,12 @@ function getWeather(lat, lon) {
       return response.json();
     })
     .then(function (json) {
-      const temperature = json.main.temp;
-      const place = json.name;
-      weather.innerText = `${temperature}℃ @ ${place}`;
+       const place = json.name;
+       const temperature = json.main.temp;
+       const cur_weather = json.weather.main;
+       const humidity = json.main.humidity;
+      
+      weather.innerText = `${place}, ${cur_weather}, ${temperature}℃, {humidity}%`;
     });
 }
 
