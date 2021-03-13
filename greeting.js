@@ -10,15 +10,17 @@ function saveName(text) {
 
 function handleSubmit(event) {
   event.preventDefault(); // submit하며 페이지 새로 고침되는 것을 막음. 이게 디폴트값.
-  const currentValue = input.value;  
+  const currentValue = input.value;
   const t = document.querySelector(".js-worning");
- 
-  if (isNaN(currentValue)){ // currentValue값이 숫자가 아니라면 아래 함수 실행.
-	  paintGreeting(currentValue);
-	  saveName(currentValue);
-  }else{ // 숫자면 숫자 입력하라고 뜸.
-	  t.classList.add(SHOWING_CN);
-	  t.innerText = `숫자가 이름이냐?`;
+
+  if (isNaN(currentValue)) {
+    // currentValue값이 숫자가 아니라면 아래 함수 실행.
+    paintGreeting(currentValue);
+    saveName(currentValue);
+  } else {
+    // 숫자면 숫자 입력하라고 뜸.
+    t.classList.add(SHOWING_CN);
+    t.innerText = `숫자가 이름이냐?`;
   }
 }
 
@@ -32,6 +34,8 @@ function paintGreeting(text) {
   greeting.classList.add(SHOWING_CN);
   const t = document.querySelector(".js-worning");
   t.classList.remove(SHOWING_CN);
+  greeting.classList.add("text-center");
+  greeting.style.fontSize = "1.5rem";
   greeting.innerText = `일해라, ${text} 돈의 노예 새끼야.`;
 }
 function loadName() {
