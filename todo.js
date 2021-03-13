@@ -72,8 +72,10 @@ function paintToDo(text, check) {
   const toDo = document.createElement("span");
   const newId = idCounts + 1;
   const delBtn = document.createElement("button");
+  // delBtn.classList.add("btn btn-danger");
+  // delBtn.type = "button";
 
-  delBtn.innerText = "🗑";
+  delBtn.innerText = "삭제";
   delBtn.addEventListener("click", deleteToDo);
 
   toDo.className = check ? "check" : null;
