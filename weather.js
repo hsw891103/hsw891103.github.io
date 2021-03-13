@@ -13,8 +13,8 @@ function getWeather(lat, lon) {
     .then(function (json) {
        const place = json.name;
        const temperature = json.main.temp;
-       const cur_weather = json.weather.main;
-       const humidity = json.main.humidity;
+       const cur_weather = json.weather[0].main; //날씨 불러옴.
+       const humidity = json.main.humidity; //습도
       
       weather.innerText = `${place}, ${cur_weather}, ${temperature}℃, ${humidity}%`;
     });
