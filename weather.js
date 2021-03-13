@@ -16,7 +16,7 @@ function getWeather(lat, lon) {
        const cur_weather = json.weather.main;
        const humidity = json.main.humidity;
       
-      weather.innerText = `${place}, ${cur_weather}, ${temperature}℃, {humidity}%`;
+      weather.innerText = `${place}, ${cur_weather}, ${temperature}℃, ${humidity}%`;
     });
 }
 
