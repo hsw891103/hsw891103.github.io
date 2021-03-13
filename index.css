@@ -30,7 +30,7 @@ body {
   text-align: center;
   padding-bottom: 10px;
 }
-li {
+ul > li {
   display: block;
   text-align: center;
   padding-bottom: 5px;
@@ -38,8 +38,8 @@ li {
 
 .toDoList {
   margin: auto;
-  background: rgba(215, 231, 254, 0.26);
-  width: 30%;
+  background: rgba(240, 245, 253, 0.26);
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -69,19 +69,6 @@ li {
   font-size: 1.5rem;
   color: rgb(255, 0, 0);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-.section {
-  height: 600px;
-  background-color: rgb(253, 221, 221);
-}
-
-.aside {
-  position: absolute;
-  margin: -600px 0 0 960px;
-  width: 180px;
-  height: 600px;
-  background-color: rgb(227, 248, 239);
 }
 
 .check {
