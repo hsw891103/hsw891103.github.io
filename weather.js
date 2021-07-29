@@ -11,11 +11,10 @@ function getWeather(lat, lon) {
       return response.json();
     })
     .then(function (json) {
-       const place = json.name;
-       const temperature = json.main.temp;
-       const cur_weather = json.weather[0].main; //날씨 불러옴.
-       const humidity = json.main.humidity; //습도
-      
+      const place = json.name;
+      const temperature = json.main.temp;
+      const humidity = json.main.humidity;
+      const cur_weather = json.weather[0].main;
       weather.innerText = `${place}, ${cur_weather}, ${temperature}℃, ${humidity}%`;
     });
 }
